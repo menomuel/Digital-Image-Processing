@@ -35,8 +35,8 @@ plot_img_table(blur_img, blur_names)
 
 # noise
 noise = img.copy()
-#cv.randn(noise, 0, 32)
-cv.randu(noise, -48, 48)
+cv.randn(noise, 0, 32)
+#cv.randu(noise, -48, 48)
 _img = img + noise
 
 kernel_size = 9
